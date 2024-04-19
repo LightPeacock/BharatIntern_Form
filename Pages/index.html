@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(to right, violet,red,yellow);
+      }
+
+      form {
+        width: 350px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: black;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 30 30 100px rgba(249, 245, 245, 0.1);
+      }
+      input[type="text"],
+      input[type="password"],
+      textarea {
+        width: 90%;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+      input[type="submit"]:hover {
+        background-color: #16bd3d;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/register" method="POST">
+      <h2>Submit Form</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <br />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
